@@ -9,4 +9,4 @@ r303: r303: <https://athalhammer.github.io/303voc/303.ttl> .
 r303: rdf:type rdf:Property ;
   rdfs:subPropertyOf foaf:isPrimaryTopicOf ;
   rdfs:label "<- real-world resource | document ->"@en ;
-  rdfs:comment "This predicate adds metadata to your Linked Data document which enables to clearly identify URI of the real-world resource described by the RDF document (in the subject position) as well as the URI of the RDF document itself (object position). It is just a metadata element and without intending to solve httpRange-14."@en .
+  rdfs:comment "This predicate adds metadata to your Linked Data document which enables to clearly identify URI of the real-world resource described by the RDF document (in the subject position) as well as the URI of the RDF document itself (object position). It is just a metadata element without intention to solve httpRange-14."@en .
