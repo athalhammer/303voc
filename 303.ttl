@@ -1,7 +1,7 @@
-@prefix 303: <https://w3id.org/303> .
+@prefix r303: <https://w3id.org/303> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
-303: rdf:type rdf:Property ;
+r303: rdf:type rdf:Property ;
   rdfs:label "<- real-world resource | document ->"@en ;
   rdfs:comment "This predicate adds metadata to your Linked Data document which enables to clearly identify URI of the real-world resource described by the RDF document (in the subject position) as well as the URI of the RDF document itself (object position). It is just a metadata element and without intending to solve httpRange-14."@en .
