@@ -1,12 +1,16 @@
-@prefix r303: <https://w3id.org/303> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
 
 # dogfood
-r303: r303: <https://athalhammer.github.io/303voc/303.ttl> .
+<https://w3id.org/303> <https://w3id.org/303> <https://athalhammer.github.io/303voc/303.ttl> .
 
-r303: rdf:type rdf:Property ;
+<https://athalhammer.github.io/303voc/303.ttl> dcterms:creator <https://orcid.org/0000-0002-0991-5771> ;
+  dcterms:created "2021-06-09"^^xsd:date .
+
+<https://w3id.org/303> rdf:type rdf:Property ;
   rdfs:subPropertyOf foaf:isPrimaryTopicOf ;
   rdfs:label "<- real-world resource | document ->"@en ;
-  rdfs:comment "This predicate adds metadata to your Linked Data document which enables to clearly identify URI of the real-world resource described by the RDF document (in the subject position) as well as the URI of the RDF document itself (object position). It is just a metadata element without intention to solve httpRange-14."@en .
+  rdfs:comment "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the canonical URI of the real-world resource (subject position) described by the RDF document as well as the canonical/preferred URI of the RDF document itself (object position). It is just a metadata element without intention to solve httpRange-14."@en .
