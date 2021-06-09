@@ -1,11 +1,11 @@
 # <https://w3id.org/303> - a rdf:Property
 
 ## Motivation
-When a RDF document was successfully retrieved and the mime-type overlaps with the preferences specified in the HTTP "Accept" header typically the "crystal gazing" starts: There is a chain of 301, 302, and 303 redirects and, as in the specification says, one of the URLs is the real-world resource and another is the URL of the document describing it. The real-world resource must be somewhere before the 303 redirect and the document URL somewhere afterwards. However, the following problems are quite common:
+When a RDF document was successfully retrieved and the mime-type overlaps with the preferences specified in the HTTP "Accept" header typically the "crystal gazing" starts: There is a chain of 301, 302, and 303 redirects and, as the specification says, one of the URLs is the real-world resource and another is the URL of the document describing it. The real-world resource must be somewhere before the 303 redirect and the document URL somewhere afterwards. However, the following problems are quite common:
 * No 303 redirects or multiple ones.
 * Multiple 301/302 redirects before and/or after the 303 redirect.
 
-This is even trickier if we get a URI from the middle of the redirect chain (e.g., due to a bad reference), such as <https://www.wikidata.org/entity/Q17027750>. The RDF comes back, it parses fine, we just don't exactly know the canonical URI of the resource we were looking for. For the Q17027750 resource this is a combination of taking the URI that is returned after the first redirect and use it in combination with the `schema:about` property in the returned RDF document to derive that the canonical URI of the originally requested resource is <http://www.wikidata.org/entity/Q17027750> (http without s).
+This is even trickier if we get a URI from the middle of the redirect chain (e.g., due to a bad reference), such as <https://www.wikidata.org/entity/Q17027750>. The RDF comes back, it parses fine, we just don't exactly know the canonical URI of the resource we were looking for. For the Q17027750 resource this is a combination of taking the URI that is returned after the first 303 redirect and use it in combination with the `schema:about` property in the returned RDF document to derive that the canonical URI of the originally requested resource is <http://www.wikidata.org/entity/Q17027750> (http without s).
 
 ## Proposal
 We explicitly insert a <https://w3id.org/303> triple as follows:
