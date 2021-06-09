@@ -19,7 +19,7 @@ It provides pointers to
 
 in the subject position (1) and object postion (2) respectively. A Semantic Web agent that understands the meaning of this property can do the following:
 
->In any retrieved RDF document (that supports the property) a Semantic Web agent can immediately find pointers to the described real-world resource(s) and the preferred/canonical URI of the document; even without knowing any of them before and also without analyzing the redirect chain.
+>In any retrieved RDF document (that supports the property) a Semantic Web agent can immediately find pointers to the described real-world resource and the preferred/canonical URI of the document; even without knowing any of them before and also without analyzing the redirect chain.
 
 
 ## Best Practices
