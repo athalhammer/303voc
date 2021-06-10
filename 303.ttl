@@ -12,4 +12,4 @@
 <https://w3id.org/303> rdf:type rdf:Property ;
   rdfs:subPropertyOf <http://www.w3.org/2007/05/powder-s#describedby> ;
   rdfs:label "<- real-world resource | document ->"@en ;
-  rdfs:comment "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the canonical URI of the real-world resource (subject position) described by the RDF document as well as the canonical/preferred URI of the RDF document itself (object position). It is just a metadata element without intention to solve httpRange-14."@en .
+  rdfs:comment "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the described real-world resource (subject position) and the URI of the generic document (object position). It is just a metadata element without intention to solve httpRange-14."@en .
