@@ -23,10 +23,11 @@ in the subject position (1) and object postion (2) respectively. Now the followi
 
 >In any retrieved RDF document (that supports the property) a Semantic Web agent can immediately find pointers to the described real-world resource and the document describing it; even without knowing any of them before and also without analyzing the redirect chain.
 
+One may still have a look at the redirect chain, for example, in order to verify that the source has "authority" to define the meaning of the given URIs (for this subdomain/hostname matches may be sufficient).
 
 ## Best Practices
 1. Only one such relation MUST be defined per RDF document.
 2. The two URLs in the subject position and object position MUST be different from another.
 3. The stated URLs MUST be used to describe the real-world resource and the document respectively in the returned RDF document.
 4. It can be used for both, hash and slash URLs. However, it MUST not be used in a contradictionary way to the [Cool URIs for the Semantic Web](https://www.w3.org/TR/cooluris/) spec.
-5. The predicate is __not__ intended as a replacement for a 303 redirect. It is more of a metadata element that states URLs for both, the URI of the real-world resource and the URL of the document describing it (nothing to see here, move along "httpRange-14 folks").
+5. In contrast to "[toucan publishing](http://blog.iandavis.com/2010/11/04/is-303-really-necessary/)", the predicate is __not__ intended as a replacement for a 303 redirect. It is more of a metadata element that states URLs for both, the URI of the real-world resource and the URL of the document describing it (nothing to see here, move along "httpRange-14 folks").
