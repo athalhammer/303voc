@@ -4,12 +4,13 @@
 @prefix dcterms: <http://purl.org/dc/terms/>.
 
 # dogfood
-<https://w3id.org/303> <https://w3id.org/303> <https://athalhammer.github.io/303voc/303.ttl> .
+<https://w3id.org/303> <https://w3id.org/303> <https://w3id.org/303/doc> .
 
-<https://athalhammer.github.io/303voc/303.ttl> dcterms:creator <https://orcid.org/0000-0002-0991-5771> ;
-  dcterms:created "2021-06-09"^^xsd:date .
+<hhttps://w3id.org/303/doc> dcterms:creator <https://orcid.org/0000-0002-0991-5771> ;
+  dcterms:created "2021-06-09"^^xsd:date ;
+  dcterms:modified "2023-07-09"^^xsd:date .
 
 <https://w3id.org/303> rdf:type rdf:Property ;
   rdfs:subPropertyOf <http://www.w3.org/2007/05/powder-s#describedby> ;
-  rdfs:label "<- real-world resource | document ->"@en ;
+  rdfs:label "(subject) real-world resource ||| document (object)"@en ;
   rdfs:comment "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the described real-world resource (subject position) and the URI of the generic document (object position). It is just a metadata element without intention to solve httpRange-14."@en .
