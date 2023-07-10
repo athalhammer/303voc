@@ -1,7 +1,7 @@
 {
   "@graph": [
     {
-      "@id": "hhttps://w3id.org/303/doc",
+      "@id": "https://w3id.org/303/doc",
       "http://purl.org/dc/terms/created": {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
         "@value": "2021-06-09"
