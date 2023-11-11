@@ -1,36 +1,29 @@
 {
-  "@graph": [
-    {
-      "@id": "https://w3id.org/303/doc",
-      "http://purl.org/dc/terms/created": {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2021-06-09"
-      },
-      "http://purl.org/dc/terms/creator": {
-        "@id": "https://orcid.org/0000-0002-0991-5771"
-      },
-      "http://purl.org/dc/terms/modified": {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-07-09"
-      }
+  "@id": "https://w3id.org/303",
+  "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+  "http://www.w3.org/2000/01/rdf-schema#comment": {
+    "@language": "en",
+    "@value": "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the described real-world resource (subject position) and the URI of the generic document (object position). It is just a metadata element without intention to solve httpRange-14."
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label": {
+    "@language": "en",
+    "@value": "(subject) real-world resource ||| document (object)"
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
+    "@id": "http://www.w3.org/2007/05/powder-s#describedby"
+  },
+  "https://w3id.org/303": {
+    "@id": "https://w3id.org/303/doc",
+    "http://purl.org/dc/terms/created": {
+      "@type": "http://www.w3.org/2001/XMLSchema#date",
+      "@value": "2021-06-09"
     },
-    {
-      "@id": "https://w3id.org/303",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-      "http://www.w3.org/2000/01/rdf-schema#comment": {
-        "@language": "en",
-        "@value": "This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the described real-world resource (subject position) and the URI of the generic document (object position). It is just a metadata element without intention to solve httpRange-14."
-      },
-      "http://www.w3.org/2000/01/rdf-schema#label": {
-        "@language": "en",
-        "@value": "(subject) real-world resource ||| document (object)"
-      },
-      "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
-        "@id": "http://www.w3.org/2007/05/powder-s#describedby"
-      },
-      "https://w3id.org/303": {
-        "@id": "https://w3id.org/303/doc"
-      }
+    "http://purl.org/dc/terms/creator": {
+      "@id": "https://orcid.org/0000-0002-0991-5771"
+    },
+    "http://purl.org/dc/terms/modified": {
+      "@type": "http://www.w3.org/2001/XMLSchema#date",
+      "@value": "2023-11-11"
     }
-  ]
+  }
 }
