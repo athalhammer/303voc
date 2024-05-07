@@ -7,7 +7,7 @@
   },
   "http://www.w3.org/2000/01/rdf-schema#label": {
     "@language": "en",
-    "@value": "(subject) real-world resource ||| document (object)"
+    "@value": "303-redirect to"
   },
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": {
     "@id": "http://www.w3.org/2007/05/powder-s#describedby"
