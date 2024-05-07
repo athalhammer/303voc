@@ -8,7 +8,7 @@
 
 <https://w3id.org/303/doc> dcterms:creator <https://orcid.org/0000-0002-0991-5771> ;
   dcterms:created "2021-06-09"^^xsd:date ;
-  dcterms:modified "2023-07-09"^^xsd:date .
+  dcterms:modified "2024-05-07"^^xsd:date .
 
 <https://w3id.org/303> rdf:type rdf:Property ;
   rdfs:subPropertyOf <http://www.w3.org/2007/05/powder-s#describedby> ;
