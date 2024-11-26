@@ -1,4 +1,4 @@
-# <https://w3id.org/303> - a rdf:Property
+# <https://w3id.org/x303> - a rdf:Property
 
 ## Motivation
 When a RDF document was successfully retrieved and the mime-type overlaps with the preferences specified in the HTTP "Accept" header typically the "crystal gazing" starts: There is a chain of 301, 302, and 303 redirects and, as the specification says, one of the URLs identifies a real-world resource and another is the URL of the document describing it. The real-world resource must be somewhere before the 303 redirect and the document URL somewhere afterwards. However, the following problems are quite common:
@@ -10,10 +10,10 @@ This is even trickier if we get a URL from the middle of the redirect chain (e.g
 __Side note:__ It is actually not really wrong to refer to https://www.wikidata.org/entity/Q17027750 instead of http://www.wikidata.org/entity/Q17027750 as resolving the latter URL results in a 301 (Moved Permanently) redirect to the former. However, in the end we don't find any triples with the former URL in the returned RDF document.
 
 ## Proposal
-We explicitly insert a <https://w3id.org/303> triple as follows:
+We explicitly insert a <https://w3id.org/x303> triple as follows:
 
 ```
-  <https://www.example.com/id/alice> <https://w3id.org/303> <https://www.example.com/doc/alice> .
+  <https://www.example.com/id/alice> <https://w3id.org/x303> <https://www.example.com/doc/alice> .
 ```
 It provides pointers to
   1. the described real-world resource 
@@ -31,3 +31,7 @@ A client may still check the redirect chain, for example, in order to verify tha
 3. The stated URLs MUST be used to describe the real-world resource and the document respectively in the returned RDF document.
 4. It can be used for both, hash and slash URLs. However, it MUST not be used in a contradictionary way to the [Cool URIs for the Semantic Web](https://www.w3.org/TR/cooluris/) spec. In particular: Resolving the URI in the object position MUST lead to the document where the "303 triple" has been found. Resolving the URI in the subject position MUST involve a 303 redirect to the URI in the object position (at some point) if it is not a hash URI.
 5. In contrast to "[toucan publishing](http://blog.iandavis.com/2010/11/04/is-303-really-necessary/)", the predicate is __not__ intended as a replacement for a 303 redirect. It is more of a metadata element that states URLs for both, the URI of the real-world resource and the URL of the document describing it (nothing to see here, move along "httpRange-14 folks").
+
+
+## Changelog
+* [2024-11-26] Replaced <https://w3id.org/303> in favor of <https://w3id.org/x303> that is compatible to XML qualified names (that can not start with a number).
