@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="https://w3id.org/303">
+    <dcterms:isReplacedBy rdf:resource="https://w3id.org/x303"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <dcterms:replaces rdf:resource="https://w3id.org/303"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <rdfs:comment xml:lang="en">This predicate adds metadata to your Linked Data RDF document which enables to clearly identify the described real-world resource (subject position) and the URI of the generic document (object position). It is just a metadata element without intention to solve httpRange-14.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <rdfs:label xml:lang="en">303-redirect to</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2007/05/powder-s#describedby"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303">
+    <ns0:x303 xmlns:ns0="https://w3id.org/" rdf:resource="https://w3id.org/x303/doc"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303/doc">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-09</dcterms:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303/doc">
+    <dcterms:creator rdf:resource="https://orcid.org/0000-0002-0991-5771"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303/doc">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-07</dcterms:modified>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/x303/doc">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-26</dcterms:modified>
+  </rdf:Description>
+</rdf:RDF>
