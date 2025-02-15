@@ -1,7 +1,7 @@
-# <https://w3id.org/x303> - a rdf:Property
+# <https://w3id.org/x303> - an rdf:Property
 
 ## Motivation
-When a RDF document was successfully retrieved and the mime-type overlaps with the preferences specified in the HTTP "Accept" header typically the "crystal gazing" starts: There is a chain of 301, 302, and 303 redirects and, as the specification says, one of the URLs identifies a real-world resource and another is the URL of the document describing it. The real-world resource must be somewhere before the 303 redirect and the document URL somewhere afterwards. However, the following problems are quite common:
+When an RDF document was successfully retrieved and the mime-type overlaps with the preferences specified in the HTTP "Accept" header typically the "crystal gazing" starts: There is a chain of 301, 302, and 303 redirects and, as the specification says, one of the URLs identifies a real-world resource and another is the URL of the document describing it. The real-world resource must be somewhere before the 303 redirect and the document URL somewhere afterwards. However, the following problems are quite common:
 * No 303 redirects or multiple ones.
 * Multiple 301/302 redirects before and/or after the 303 redirect.
 
